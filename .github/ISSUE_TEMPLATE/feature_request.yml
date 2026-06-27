@@ -1,0 +1,52 @@
+name: Feature Request
+description: 新機能の追加
+title: "[Feature] "
+labels: ["feature"]
+
+body:
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - 高
+        - 中
+        - 低
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 実装する内容を簡潔に記載してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: なぜこの機能が必要なのかを記載してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: flow
+    attributes:
+      label: 実装フロウ
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      value: |
+        - [ ] 要件を満たしている
+        - [ ] テストが通過している
+        - [ ] レビューが完了している
+    validations:
+      required: true
