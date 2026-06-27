@@ -43,6 +43,12 @@ body:
         - [ ]
 
   - type: textarea
+    id: references
+    attributes:
+      label: 参考URL
+      description: 参考になる資料やリンクがあれば記載してください（任意）
+
+  - type: textarea
     id: done
     attributes:
       label: 完了条件
