@@ -29,20 +29,17 @@ body:
     id: steps
     attributes:
       label: 再現手順
+      description: どのような操作をするとこのバグが起きるか、順番に書いてください
       value: |
         1.
         2.
         3.
-    validations:
-      required: true
 
   - type: textarea
     id: expected
     attributes:
       label: 期待する挙動
       description: 本来どうあるべきかを記載してください
-    validations:
-      required: true
 
   - type: textarea
     id: actual
@@ -57,6 +54,12 @@ body:
     attributes:
       label: 環境
       description: OS・ブラウザ・バージョンなど、判明している範囲で記載してください
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考URL
+      description: 参考になる資料やリンクがあれば記載してください（任意）
 
   - type: textarea
     id: done
